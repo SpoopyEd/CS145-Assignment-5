@@ -2,9 +2,10 @@
 // CS145
 // 1/27/26
 // Assignment 5
-// there is no such things as a Pokemon, they have a name, so this is abstract and a pokemon object
+// there is no such things as a Pokemon, they have a species, so this is abstract and a pokemon object
 // Cannot be made, only extensions
 public abstract class Pokemon {
+    private String species; // maybe final
     private String name;
     private String type;
     private int lvl;
@@ -15,6 +16,9 @@ public abstract class Pokemon {
         this.name = name;
         this.type = type;
         this.lvl = lvl;
+    }
+    public String getSpecies() {
+        return species;
     }
     public void setName(String name) {
         this.name = name;
@@ -34,13 +38,10 @@ public abstract class Pokemon {
     public int getLvl() {
         return lvl;
     }
-    public void eat() {
-        System.out.println("eat");
-    }
-    public void move() {
-        System.out.println("move");
+    public void attack() {
+
     }
     public void sound() {
-        System.out.println("sound");
+
     }
 }
