@@ -13,7 +13,7 @@ public class Assignment5 {
         System.out.println("What would you like to name it?");
         String name = input.nextLine();
         Cubone cubone = new Cubone(name);
-        System.out.printf("%s has been added to your party!%n", cubone.getName());
+        System.out.printf("Level %d %s has been added to your party!%n", cubone.getLvl(), cubone.getName());
         cubone.attack();
         cubone.sound();
 
