@@ -10,7 +10,7 @@ public abstract class Pokemon {
     private String name; // name is determined by user
     private String type; // type is determined based on species
     private static final SecureRandom randomNumbers = new SecureRandom(); // created to determine level
-    private int lvl = randomNumbers.nextInt(10); // lvl is random integer (1-10)
+    private int lvl = randomNumbers.nextInt(10) + 1; // lvl is random integer (1-10)
     public Pokemon(String name) {
         this.name = name;
     }

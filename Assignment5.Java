@@ -7,13 +7,19 @@ import java.util.Scanner;
 public class Assignment5 {
     public static Scanner input = new Scanner(System.in);  // Create a Scanner object
     public static void main(String[] args) {
+        boolean continue = true;
         // store caught Pokemon here, store as Pokemon or Cubone object?
         // maybe create menu to select pokemon that the user wants to throw a pokeball at
         System.out.println("You caught a Cubone Pokemon!");
         System.out.println("What would you like to name it?");
         String name = input.nextLine();
         Cubone cubone = new Cubone(name);
-        System.out.printf("Level %d %s has been added to your party!%n", cubone.getLvl(), cubone.getName());
+        System.out.printf("Level %d %s has been added to your party!%n", 
+        cubone.getLvl(), cubone.getName());
+        while (continue = true) {
+            System.out.printf("What would you like to have %s do?%n", cubone.getName());
+            // try catch for 1 to attack and 2 to have it make a sound
+        }
         cubone.attack();
         cubone.sound();
 
