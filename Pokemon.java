@@ -6,8 +6,8 @@
 // so this is abstract and a pokemon object can not be made, only extensions
 import java.security.SecureRandom;
 public abstract class Pokemon {
-    protected String species; // species is determined by the subclass
-    protected String type; // type is determined based on species
+    private String species; // species is determined by the subclass
+    private String type; // type is determined based on species
     private String name; // name is determined by user
     private static final SecureRandom randomNumbers = new SecureRandom(); // created to determine level
     private int lvl = randomNumbers.nextInt(10) + 1; // lvl is random integer (1-10)
