@@ -2,8 +2,8 @@
 // CS145
 // 2/3/26
 // Assignment 5
-// there is no such things as just a Pokemon, they have a species
-// so this is abstract and a pokemon object can not be made, only extensions
+// There is no such things as just a Pokemon, they have a species
+// This is abstract and a pokemon object can not be made, only extensions
 import java.security.SecureRandom;
 public abstract class Pokemon {
     private String species; // species is determined by the subclass

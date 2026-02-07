@@ -27,7 +27,7 @@ public class Assignment5 {
         action(pikachu);
     }
     public static void action(Pokemon pokemon) { // prompts user for the pokemon to do an action
-        int answer = 0; // answer variable for user input
+        int answer = 0; // answer variable for action choosen
         boolean tryLoop= true;
         while (tryLoop == true) { // keep trying until succesful, just like life
             System.out.printf("What would you like to have %s do?%n1 to Attack, 2 to make a Sound%n",

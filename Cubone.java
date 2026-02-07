@@ -2,7 +2,7 @@
 // CS145
 // 1/27/26
 // Assignment 5
-
+// Cubone class, represents a cubone species pokemon
 public class Cubone extends Pokemon {
     public Cubone() {
         String species = "Cubone";
